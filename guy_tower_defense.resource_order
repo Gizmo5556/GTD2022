@@ -149,7 +149,7 @@
     {"name":"o_tower_placement_mask","order":15,"path":"objects/o_tower_placement_mask/o_tower_placement_mask.yy",},
     {"name":"o_trap_appleguard","order":1,"path":"objects/o_trap_appleguard/o_trap_appleguard.yy",},
     {"name":"o_trap_evilsave","order":1,"path":"objects/o_trap_evilsave/o_trap_evilsave.yy",},
-    {"name":"o_trap_seller_untitled","order":4,"path":"objects/o_trap_seller_untitled/o_trap_seller_untitled.yy",},
+    {"name":"o_trap_seller_untitled","order":8,"path":"objects/o_trap_seller_untitled/o_trap_seller_untitled.yy",},
     {"name":"o_trap_seller","order":7,"path":"objects/o_trap_seller/o_trap_seller.yy",},
     {"name":"o_trap_spikewall1","order":1,"path":"objects/o_trap_spikewall1/o_trap_spikewall1.yy",},
     {"name":"o_trap_spikewall2","order":2,"path":"objects/o_trap_spikewall2/o_trap_spikewall2.yy",},

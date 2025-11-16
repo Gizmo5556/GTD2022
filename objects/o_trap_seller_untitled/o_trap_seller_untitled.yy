@@ -8,8 +8,8 @@
   "name":"o_trap_seller_untitled",
   "overriddenProperties":[],
   "parent":{
-    "name":"rGuy",
-    "path":"folders/Objects/map specific/rGuy.yy",
+    "name":"r_untitled",
+    "path":"folders/Objects/map specific/r_untitled.yy",
   },
   "parentObjectId":{
     "name":"o_trap_seller",

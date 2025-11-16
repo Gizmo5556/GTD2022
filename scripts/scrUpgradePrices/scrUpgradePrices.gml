@@ -108,7 +108,7 @@ function scrUpgradePrices() {
 	
 	//the guy
 	
-	global.upgradeText[25] = "Mr Worldwide";
+	global.upgradeText[25] = "Mr. Worldwide";
 	global.upgradeText[26] = "Incendiary Grenades";
 	global.upgradeText[27] = "Screen-Clearing Cannon";
 	global.upgradeText[28] = "Critical Shots";
