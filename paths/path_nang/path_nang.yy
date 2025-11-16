@@ -1,0 +1,28 @@
+{
+  "$GMPath":"",
+  "%Name":"path_nang",
+  "closed":false,
+  "kind":0,
+  "name":"path_nang",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":-32.0,"y":304.0,},
+    {"speed":100.0,"x":42.0,"y":304.0,},
+    {"speed":100.0,"x":112.0,"y":528.0,},
+    {"speed":100.0,"x":144.0,"y":432.0,},
+    {"speed":100.0,"x":176.0,"y":528.0,},
+    {"speed":100.0,"x":250.0,"y":304.0,},
+    {"speed":100.0,"x":550.0,"y":304.0,},
+    {"speed":100.0,"x":624.0,"y":528.0,},
+    {"speed":100.0,"x":656.0,"y":432.0,},
+    {"speed":100.0,"x":688.0,"y":528.0,},
+    {"speed":100.0,"x":762.0,"y":304.0,},
+    {"speed":100.0,"x":832.0,"y":304.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

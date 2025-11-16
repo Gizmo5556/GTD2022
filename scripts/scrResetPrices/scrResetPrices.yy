@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrResetPrices",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrResetPrices",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

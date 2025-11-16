@@ -1,0 +1,1 @@
+image_blend = global.image_blend_for_UI;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrSpawnAppleGreen",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrSpawnAppleGreen",
+  "parent":{
+    "name":"spawn scripts",
+    "path":"folders/Scripts/spawn scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

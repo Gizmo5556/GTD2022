@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_save_medals",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_save_medals",
+  "parent":{
+    "name":"saveload",
+    "path":"folders/Scripts/saveload.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

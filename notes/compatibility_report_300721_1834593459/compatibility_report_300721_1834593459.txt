@@ -1,0 +1,87 @@
+Converting GML script: ${project_dir}\scripts\writeBytes\writeBytes.gml
+Converted description /// @description writeBytes(file,value,numbytes)/// @param file
+/// @param value
+/// @param numbytes
+
+Converting GML script: ${project_dir}\scripts\readBytes\readBytes.gml
+Converted description /// @description readBytes(file,numbytes)/// @param file
+/// @param numbytes
+
+Converting GML script: ${project_dir}\scripts\mainInit\mainInit.gml
+Converted string - line 15: 'Z' -> "Z"
+Converted string - line 16: 'R' -> "R"
+Converted string - line 20: 'Guy Tower Defense' -> "Guy Tower Defense"
+
+Converting GML script: ${project_dir}\scripts\scrGetRadius\scrGetRadius.gml
+Converted description /// @description scrGetRadius(obj)/// @param obj
+
+Converting GML script: ${project_dir}\scripts\scrGetWorth\scrGetWorth.gml
+Converted description /// @description scrGetWorth(obj)/// @param obj
+
+Converting GML script: ${project_dir}\scripts\scrGetWaveWorth\scrGetWaveWorth.gml
+Converted description /// @description scrGetWorth(obj)/// @param obj
+
+Converting GML script: ${project_dir}\scripts\scrSetWave\scrSetWave.gml
+Converted description /// @description scrSetWave(num,seconds,object,mode,time,time2)/// @param num
+/// @param seconds
+/// @param object
+/// @param mode
+/// @param time
+/// @param time2
+
+Converting GML script: ${project_dir}\scripts\scrDrawTextOutline\scrDrawTextOutline.gml
+Converted description /// @description scrDrawTextOutline(x,y,string,textcolor,outlinecolor)/// @param x
+/// @param y
+/// @param string
+/// @param textcolor
+/// @param outlinecolor
+
+!!! Font fPrice uses a font (VCR OSD Mono) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fPrice\fPrice.gms1.png
+!!! Font fSmall uses a font (VCR OSD Mono) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fSmall\fSmall.gms1.png
+!!! Font fMoney uses a font (VCR OSD Mono) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fMoney\fMoney.gms1.png
+Converting GML script: ${project_dir}\objects\oPlayer\Step_2.gml
+Converted description /// @description  edge of screen death
+
+Converting GML script: ${project_dir}\objects\oPlayer\Step_0.gml
+Converted description /// @description  standard player movement (with YoYoYoDude1's fixed vines)/// @param with YoYoYoDude1's fixed vines
+
+Converting GML script: ${project_dir}\objects\oController\Alarm_0.gml
+Converted description /// @description  set interpolation for whether the game is in fullscreen or not (have to delay by a frame)/// @param have to delay by a frame
+
+Converting GML script: ${project_dir}\objects\oPlatform\Create_0.gml
+Converted description /// @description  Slightly modified yuuutu's engine platform - set whether or not it bounces in creation code.
+
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Missing audiogroup for sound: 'sndJump' - setting to default audio group
+Missing audiogroup for sound: 'sndDJump' - setting to default audio group
+Missing audiogroup for sound: 'sndShoot' - setting to default audio group
+Missing audiogroup for sound: 'sndWallJump' - setting to default audio group
+Missing audiogroup for sound: 'sndDeath' - setting to default audio group
+Missing audiogroup for sound: 'sndBossHit' - setting to default audio group
+Missing audiogroup for sound: 'sndMoney' - setting to default audio group
+Missing audiogroup for sound: 'sndPlace' - setting to default audio group
+Missing audiogroup for sound: 'sndSpikeTrap' - setting to default audio group
+Missing audiogroup for sound: 'sndCoin' - setting to default audio group
+Missing audiogroup for sound: 'musGuyRock' - setting to default audio group
+Missing audiogroup for sound: 'sndCherry' - setting to default audio group
+Missing audiogroup for sound: 'musDeath' - setting to default audio group
+Missing audiogroup for sound: 'sndUhOh' - setting to default audio group
+Missing audiogroup for sound: 'sndThwomp' - setting to default audio group
+Missing audiogroup for sound: 'sndExplosion' - setting to default audio group
+Missing audiogroup for sound: 'sndLaser' - setting to default audio group
+Missing audiogroup for sound: 'sndHit' - setting to default audio group
+Missing audiogroup for sound: 'sndShatter' - setting to default audio group
+Missing audiogroup for sound: 'musBoss' - setting to default audio group
+Missing audiogroup for sound: 'musEnd' - setting to default audio group
+Missing audiogroup for sound: 'musTitle' - setting to default audio group
+Game speed set to 50
+Added compatibility script 'action/action_kill_object.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'texture/texture_set_interpolation.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

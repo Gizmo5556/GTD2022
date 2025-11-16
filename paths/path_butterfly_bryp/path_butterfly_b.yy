@@ -1,0 +1,26 @@
+{
+  "kind": 0,
+  "closed": false,
+  "precision": 4,
+  "points": [
+    {"speed":100.0,"x":400.0,"y":658.0,},
+    {"speed":100.0,"x":400.0,"y":464.0,},
+    {"speed":100.0,"x":368.0,"y":464.0,},
+    {"speed":100.0,"x":368.0,"y":400.0,},
+    {"speed":100.0,"x":432.0,"y":400.0,},
+    {"speed":100.0,"x":432.0,"y":464.0,},
+    {"speed":100.0,"x":400.0,"y":464.0,},
+    {"speed":100.0,"x":400.0,"y":528.0,},
+    {"speed":100.0,"x":498.0,"y":528.0,},
+    {"speed":100.0,"x":498.0,"y":304.0,},
+    {"speed":100.0,"x":400.0,"y":304.0,},
+  ],
+  "parent": {
+    "name": "Paths",
+    "path": "folders/Paths.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "path_butterfly_b",
+  "tags": [],
+  "resourceType": "GMPath",
+}

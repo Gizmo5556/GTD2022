@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"readBytes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"readBytes",
+  "parent":{
+    "name":"saveload",
+    "path":"folders/Scripts/saveload.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

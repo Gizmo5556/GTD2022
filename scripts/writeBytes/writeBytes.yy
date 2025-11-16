@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"writeBytes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"writeBytes",
+  "parent":{
+    "name":"saveload",
+    "path":"folders/Scripts/saveload.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

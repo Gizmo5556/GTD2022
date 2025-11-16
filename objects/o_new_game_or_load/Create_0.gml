@@ -1,0 +1,9 @@
+new_game_button = instance_create(314, 400, o_new_game_button);
+new_game_button.image_xscale = 2;
+new_game_button.image_yscale = 2;
+load_save_button = instance_create(514, 400, o_load_save_button);
+load_save_button.image_xscale = 2;
+load_save_button.image_yscale = 2;
+back_to_maps_button = instance_create(714, 400, o_back_to_maps_button2);
+back_to_maps_button.image_xscale = 2;
+back_to_maps_button.image_yscale = 2;

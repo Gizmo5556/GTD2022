@@ -1,0 +1,1 @@
+part_particles_create(global.particles, irandom_range(0, 1028), 0, global.partTypeConfetti, 1);

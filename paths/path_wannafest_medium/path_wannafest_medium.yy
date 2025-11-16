@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"path_wannafest_medium",
+  "closed":false,
+  "kind":0,
+  "name":"path_wannafest_medium",
+  "parent":{
+    "name":"unused",
+    "path":"folders/Paths/unused.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":-32.0,"y":452.0,},
+    {"speed":100.0,"x":324.0,"y":452.0,},
+    {"speed":100.0,"x":356.0,"y":408.0,},
+    {"speed":100.0,"x":444.0,"y":408.0,},
+    {"speed":100.0,"x":476.0,"y":452.0,},
+    {"speed":100.0,"x":832.0,"y":452.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,27 @@
+{
+  "$GMPath":"",
+  "%Name":"path_tower2",
+  "closed":false,
+  "kind":0,
+  "name":"path_tower2",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":64.0,"y":-32.0,},
+    {"speed":100.0,"x":64.0,"y":96.0,},
+    {"speed":100.0,"x":288.0,"y":96.0,},
+    {"speed":100.0,"x":288.0,"y":208.0,},
+    {"speed":100.0,"x":496.0,"y":208.0,},
+    {"speed":100.0,"x":496.0,"y":144.0,},
+    {"speed":100.0,"x":432.0,"y":144.0,},
+    {"speed":100.0,"x":432.0,"y":560.0,},
+    {"speed":100.0,"x":656.0,"y":560.0,},
+    {"speed":100.0,"x":656.0,"y":320.0,},
+    {"speed":100.0,"x":864.0,"y":320.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

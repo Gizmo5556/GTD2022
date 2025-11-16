@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sndBossHit",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":6,
+  "conversionMode":0,
+  "duration":0.307664,
+  "exportDir":"",
+  "name":"sndBossHit",
+  "parent":{
+    "name":"old sounds",
+    "path":"folders/Sounds/old sounds.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndBossHit",
+  "volume":0.1,
+}

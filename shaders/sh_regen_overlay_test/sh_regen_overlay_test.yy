@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"sh_regen_overlay_test",
+  "name":"sh_regen_overlay_test",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

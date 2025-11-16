@@ -1,0 +1,28 @@
+{
+  "$GMPath":"",
+  "%Name":"path_machinary1",
+  "closed":false,
+  "kind":0,
+  "name":"path_machinary1",
+  "parent":{
+    "name":"r_machinary",
+    "path":"folders/Paths/r_machinary.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":-32.0,"y":224.0,},
+    {"speed":100.0,"x":64.0,"y":224.0,},
+    {"speed":100.0,"x":64.0,"y":64.0,},
+    {"speed":100.0,"x":320.0,"y":64.0,},
+    {"speed":100.0,"x":320.0,"y":224.0,},
+    {"speed":100.0,"x":480.0,"y":224.0,},
+    {"speed":100.0,"x":480.0,"y":224.0,},
+    {"speed":100.0,"x":480.0,"y":384.0,},
+    {"speed":100.0,"x":736.0,"y":384.0,},
+    {"speed":100.0,"x":736.0,"y":544.0,},
+    {"speed":100.0,"x":480.0,"y":544.0,},
+    {"speed":100.0,"x":480.0,"y":640.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

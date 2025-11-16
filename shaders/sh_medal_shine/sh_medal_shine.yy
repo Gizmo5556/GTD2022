@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"sh_medal_shine",
+  "name":"sh_medal_shine",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

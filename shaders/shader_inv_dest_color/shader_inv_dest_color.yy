@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shader_inv_dest_color",
+  "name":"shader_inv_dest_color",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

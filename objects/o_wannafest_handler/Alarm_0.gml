@@ -1,0 +1,2 @@
+state = WANNAFEST_HANDLER_STATES.WAITING_UNTIL_SPIN
+update_rounds_left_until_event = true;

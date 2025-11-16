@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"flipGravity",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"flipGravity",
+  "parent":{
+    "name":"player",
+    "path":"folders/Scripts/player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

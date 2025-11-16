@@ -1,0 +1,158 @@
+version 1.1:
+
+	4 new maps: WOW, Machinary, Neon Staircase, Wheel of Misfortune
+	
+
+	Balance changes:
+	
+		Rebalanced The Kid
+			Tier 4 and 5 moons now bounce off of the screen borders, allowing them to hit the same fruit more than once. They'll excel against clays, but not so much bosses.
+				Tier 4 shoots one moon that bounces once
+				Tier 5 shoots three moons that each bounce thrice
+			Increased attack speed for tiers 4 and 5
+			Increased damage against clay fruit for Tier 5
+			Decreased the size of each moon for Tier 5
+			Decreased the speed of each moon for Tier 5
+			Significantly decreased the damage against boss fruit for Tier 5
+	
+		Rebalanced Spike Turret
+			The higher tiers of Spike Turret will still be really good against boss fruit, but I found it too powerful against non-bosses.
+			Decreased prices for tiers 3 - 5
+			Increased attack speed for tiers 3 - 5 (Tier 3 in particular was supposed to shoot slightly faster, but instead shot slightly slower. This is now fixed).
+			Decreased damage against clays for Tier 5
+			Decreased piercing per spike for Tier 5
+			
+		Rebalanced Geezer
+			I've felt uneasy about tiers 4 and 5 relying on abilities with long cooldowns, so I am giving them more passive buffs for their base attacks in hopes they're more reliable
+			Tiers 4 and 5 now do more damage against clays and bosses
+			Increased prices for Tiers 4 and 5
+			
+		Rebalanced Spike Factory
+			I didn't like the big gap in price from Tier 1 to Tier 2, so I tried to rework that.
+			Tier 1 now slightly improves the production rate.
+			Increased the price of Tier 1
+			Very slightly increased the price of Tier 2
+			Tier 2 now correctly says the spike pile duration is longer. There is no functional change, but this wasn't displayed in the upgrade text before.
+			
+		Rebalanced The Guy
+			Tiers 4 and 5 were awkward for various reasons, but mainly I wanted to make the knockback more consistent and make him better against non-boss fruit
+			Tier 4 now gets slight knockback against non-boss fruit
+			Increased Tier 5 piercing
+			Increased Tiers 4 and 5 clay damage
+			Increased Tier 4 boss damage
+			Decreased Tier 4 and Tier 5 critical shot damage, piercing, and knockback
+			
+		Buffed Miku
+			Tier 4 cabbage attack now stuns boss fruit, similarly to Boshy's Tier 4. Weaker boss fruit are stunned for longer.
+			Increase Tier 4 cabbage attack speed
+			Tier 4 now gets a small range boost
+			Decrease the price of Tier 4
+		
+		Nerfed Mayumushi
+			Played with him and I felt like I should nerf him slightly
+			Slightly decreased base attack speed
+			Slightly increased the base price
+			Increased prices for Tiers 2 - 5
+			
+		Nerfed Marcianito
+			Tiers 4 and 5 were pretty broken for their costs
+			Decreased all laser damage for Tier 4
+			Increased price for Tiers 4 and 5
+
+		Nerfed Captain Viridian
+			Decreased the damage dealt for the Tier 5 ability
+			
+		Nerfed Lee Ho-Seong
+			Decreased damage against bosses for Tier 5
+
+	Bug Fixes:
+	
+		Fixed Guy's Tier 5 being on the wrong layer on the Duloxetine map
+		
+		Fixed the catharsis shader being used on the button text on the Catharsis map
+		
+		Fixed Geezer's Octorok bullets not splitting into frags
+		
+		Fixed Geezer's main attack damage being applied to the spiny damage
+		
+		Fixed the target mode button flickering for one frame when switching between two towers who don't have targeting priority
+		
+		Fixed(?) fullscreen being blurry until a tower was clicked on
+
+
+	Misc:
+	
+		There's now a visual indicator for when you're using the "Lock Direction" option for Marcianito.
+		
+		Added a "Follow Mouse" option for Marcianito. Note that this only affects his main laser attack, and not his UFO attack. "Lock Direction" will still take priority.
+			
+		Rebalanced/Nerfed a handful of waves
+		
+		Medals now get a rainbow effect if you beat all 140 waves without losing all of your lives.
+		
+		Update Viridian tower description to include "camo detection" in "Upgrades include..."
+		
+		Added an option to toggle the Neon Staircase shader effect. Turned off by default.
+		
+		Some touchups in the readme
+		
+
+
+version 1.02:
+
+	changelog file added
+	
+	New Beginner map: "Duloxetine". Thank you to tamano for the suggestion and resources!
+
+	Balance changes:
+	
+		Mayumushi base price increased from 550 to 600
+	
+		Geezer's "Superfluous Spinies" price decreased from 5000 to 4750
+		
+		Sticky Keys' "Millennium Bug" price decreased from 4500 to 4250 
+		
+		Boshy's "Arachnophobia" price decreased from 36000 to 33000
+		
+		Spike Turret's "Spike Storm" price decreased from 22500 to 21250
+		
+		Cirno's "Ice Sign "Icicle Fall"" price increased from 3000 to 4200
+		
+		Late game freeplay rebalanced to make wave 119 and 140 more doable, while making the other waves slightly more difficult. Slightly more income is also given during this phase in order to let the player experiment more with expensive upgrades/combinations. 
+		
+		Regenerative fruit no longer gain health while frozen, knockbacked by Sray's "Blinding Lights", or knockbacked by Tyson's "Intimidation"
+		
+		Sray now has a significantly smaller "footprint" to make grouping multiple srays together (or sray with other towers) easier
+		
+		Cirno's "Ice Sign "Icicle Fall"" now buffs the base attack in addition to adding the projectile attack. The base attack removes regen and camo properties from all fruit (including Yellow Princes), and applies a debuff to clays and boss fruit. Debuffed fruit will temporarily take additional damage from all sources, including sources that normally cannot damage frozen fruit. Yellow Princes will also effectively lose their lead properties while they are debuffed, but not their black properties.
+		
+	Bug fixes:
+	
+		Boshy's "Arachnophobia"'s debuff now correctly applies to wave 100/119/140 bosses, although they still cannot be stunned
+		
+		Miku's "Boiled Broccoli" now correctly deals more damage to leads, clays, and bosses
+		
+		Fixed a bug where the debuff from Boshy's "Arachnophobia" lasted indefinitely
+		
+		Fixed a bug where the fruit path would not properly reset when restarting on the coinstack map. Thank you NeatCrown and Huse!
+
+	Misc:
+	
+		Information box now remains visible for 6 seconds instead of 2.5 seconds after the wave has started. You can still dismiss it at any time by clicking on it.
+		
+		Map selection screen restructured to group maps by difficulty
+		
+		When placing a tower, you can now see which buffs would affect that tower if it was placed there, as well as the potential new range (for heart and colonel towers). Thank you NeatCrown for the suggestion!
+
+
+
+version 1.01:
+	actual initial release
+	various bug fixes and balance changes
+	more maps
+	small UI changes
+
+
+
+version 1.0:
+	initial release of beta version
