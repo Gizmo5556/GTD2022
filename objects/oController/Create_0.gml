@@ -15,6 +15,7 @@ global.texel_w = texture_get_texel_width(global.tex)
 global.texel_h = texture_get_texel_height(global.tex)
 
 
+
 //has_created_funny_surface = false;
 
 is_paused = false;

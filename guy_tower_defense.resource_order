@@ -26,9 +26,10 @@
     {"name":"s_mapbutton","order":7,"path":"folders/Sprites/map specific/s_mapbutton.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fKHDot16","order":7,"path":"fonts/fKHDot16/fKHDot16.yy",},
     {"name":"fMoney","order":5,"path":"fonts/fMoney/fMoney.yy",},
     {"name":"Font4","order":6,"path":"fonts/Font4/Font4.yy",},
-    {"name":"fPrice","order":1,"path":"fonts/fPrice/fPrice.yy",},
+    {"name":"fPrice14","order":1,"path":"fonts/fPrice14/fPrice14.yy",},
     {"name":"fSmall","order":3,"path":"fonts/fSmall/fSmall.yy",},
     {"name":"compatibility_report_300721_1834593459","order":3,"path":"notes/compatibility_report_300721_1834593459/compatibility_report_300721_1834593459.yy",},
     {"name":"notes","order":1,"path":"notes/notes/notes.yy",},

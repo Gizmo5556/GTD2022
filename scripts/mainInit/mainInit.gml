@@ -23,6 +23,12 @@ function mainInit() {
 	global.key_shoot = ord("Z")
 	global.key_restart = ord("R")
 	
+	global.option_language_options = {
+		EN: "English",
+		JP: "日本語"
+	}
+	global.option_language = global.option_language_options.EN;
+	
 	////////////////////////////////////////////////////
 
 	// misc

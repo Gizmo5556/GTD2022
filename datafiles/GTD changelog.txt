@@ -1,3 +1,16 @@
+version 1.2:
+
+	Japanese language option added. Many thanks to syoken!
+	
+	Replaced one of the fonts because the old one was missing/buggy.
+	
+	Nerfed wave 74
+	
+	Fixed a bug where buttons for changing sound volume were visible when they weren't supposed to be.
+
+
+
+
 version 1.1:
 
 	4 new maps: WOW, Machinary, Neon Staircase, Wheel of Misfortune

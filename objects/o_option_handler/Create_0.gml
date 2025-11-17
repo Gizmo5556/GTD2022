@@ -21,43 +21,66 @@ sound_dec_volume = instance_create(x_left_button, y_draw_base + y_diff, o_button
 
 sound_dec_volume.image_xscale = -1;
 
-ff_inc_mult = instance_create(x_right_button, y_draw_base + 2*y_diff, o_button_right_arrow);
-ff_dec_mult = instance_create(x_left_button, y_draw_base + 2*y_diff, o_button_right_arrow);
+toggle_language_right = instance_create(x_right_button, y_draw_base + 2*y_diff,  o_button_right_arrow);
+toggle_language_left = instance_create(x_left_button, y_draw_base + 2*y_diff,  o_button_right_arrow);
+toggle_language_left.image_xscale = -1;
+
+ff_inc_mult = instance_create(x_right_button, y_draw_base + 3*y_diff, o_button_right_arrow);
+ff_dec_mult = instance_create(x_left_button, y_draw_base + 3*y_diff, o_button_right_arrow);
 
 ff_dec_mult.image_xscale = -1;
 
-toggle_infobox = instance_create(x_right_button, y_draw_base + 3*y_diff, o_button_checkbox);
+toggle_infobox = instance_create(x_right_button, y_draw_base + 4*y_diff, o_button_checkbox);
 toggle_infobox.image_index = global.option_show_infobox;
 
-toggle_catharsis_shader = instance_create(x_right_button, y_draw_base + 4*y_diff, o_button_checkbox);
+toggle_catharsis_shader = instance_create(x_right_button, y_draw_base + 5*y_diff, o_button_checkbox);
 toggle_catharsis_shader.image_index = global.option_catharsis_shader;
 
-toggle_neon_shader = instance_create(x_right_button, y_draw_base + 5*y_diff, o_button_checkbox);
+toggle_neon_shader = instance_create(x_right_button, y_draw_base + 6*y_diff, o_button_checkbox);
 toggle_neon_shader.image_index = global.option_neon_shader;
 
-toggle_mooned_music = instance_create(x_right_button, y_draw_base + 6*y_diff, o_button_checkbox);
+toggle_mooned_music = instance_create(x_right_button, y_draw_base + 7*y_diff, o_button_checkbox);
 toggle_mooned_music.image_index = global.option_replace_mooned_music;
 
-toggle_fullscreen = instance_create(x_right_button, y_draw_base + 7*y_diff, o_button_checkbox);
+toggle_fullscreen = instance_create(x_right_button, y_draw_base + 8*y_diff, o_button_checkbox);
 toggle_fullscreen.image_index = window_get_fullscreen();
 global.option_fullscreen = window_get_fullscreen();
 
-toggle_buff_icons_right = instance_create(x_right_button, y_draw_base + 8*y_diff,  o_button_right_arrow);
+toggle_buff_icons_right = instance_create(x_right_button, y_draw_base + 9*y_diff,  o_button_right_arrow);
 
-toggle_buff_icons_left = instance_create(x_left_button, y_draw_base + 8*y_diff,  o_button_right_arrow);
+toggle_buff_icons_left = instance_create(x_left_button, y_draw_base + 9*y_diff,  o_button_right_arrow);
 toggle_buff_icons_left.image_xscale = -1;
 
 
 if global.music_volume == 1.0 {
 	music_inc_volume.image_alpha = 0	
 }
-else if global.music_volume == 0.0{
+else if global.music_volume == 0.0 {
 	music_dec_volume.image_alpha = 0	
 }
 else {
 	music_inc_volume.image_alpha = 1
 	music_dec_volume.image_alpha = 1
 }
+
+if global.sound_volume == 1.0 {
+	sound_inc_volume.image_alpha = 0	
+}
+else if global.sound_volume == 0.0 {
+	sound_dec_volume.image_alpha = 0	
+}
+else {
+	sound_inc_volume.image_alpha = 1
+	sound_dec_volume.image_alpha = 1
+}
+
+if global.option_language == global.option_language_options.EN {
+	toggle_language_left.image_alpha = 0	
+}
+else if global.option_language == global.option_language_options.JP {
+	toggle_language_right.image_alpha = 0
+}
+
 
 if global.option_buff_icon_visible {
 	toggle_buff_icons_right.image_alpha = 0;

@@ -21,7 +21,7 @@ if not show_tower_icons {
 		
 		draw_set_valign(fa_top);
 		draw_set_halign(fa_center);
-		draw_set_font(fPrice);
+		draw_set_font(fPrice14);
 		draw_text_ext(914, 232, global.tower_name[ind], 16, 220);
 		draw_set_font(fSmall);
 		draw_text_ext(914, 282, global.tower_desc[ind], 16, 220);
@@ -32,7 +32,7 @@ if not show_tower_icons {
 		draw_set_halign(fa_center);
 		draw_set_font(fSmall);
 		draw_text(912, 304, "Hover over\nto see towers");
-		draw_set_font(fPrice)
+		draw_set_font(fPrice14)
 		draw_text(912,200,"Wave: "+string(global.wave+1) + "/" + string(global.finalwave + 1));
 	}
 	

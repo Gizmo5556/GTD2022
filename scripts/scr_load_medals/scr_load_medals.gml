@@ -44,6 +44,12 @@ function scr_load_medals(){
 		catch (_exception) {
 			global.option_neon_shader = false;	
 		}
+		try {
+			global.option_language = load_struct.language;
+		}
+		catch (_exception) {
+			global.option_language = global.option_language_options.EN;
+		}
 		window_set_fullscreen(global.option_fullscreen);
 	}
 	

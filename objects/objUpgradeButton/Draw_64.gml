@@ -28,7 +28,7 @@ draw_sprite_ext(sprite_index, image_index, x, y, scale, scale, 0, c, 1);
 
 
 //draws upgrade name
-draw_set_font(fPrice)
+draw_set_font(fPrice14)
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 if ind != -999 {

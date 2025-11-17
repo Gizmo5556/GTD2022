@@ -6,7 +6,7 @@ draw_set_valign(fa_middle);
 
 draw_set_color(c_black);
 
-draw_set_font(fPrice);
+draw_set_font(fPrice14);
 
 draw_text_ext(x, y, info_array[global.wave + 1], 16, 600);
 

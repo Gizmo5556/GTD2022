@@ -40,12 +40,28 @@ if mouse_check_button_pressed(mb_left) {
 		audio_sound_gain(snd_energy_shot, global.sound_volume*0.4, 0);
 		audio_play_sound(snd_energy_shot, 999999, 0);
 		
+		if global.sound_volume == 1.0 {
+			sound_inc_volume.image_alpha = 0	
+		}
+		else {
+			sound_inc_volume.image_alpha = 1
+			sound_dec_volume.image_alpha = 1
+		}
+		
 	}
 	else if position_meeting(mouse_x, mouse_y, sound_dec_volume) {
 		
 		global.sound_volume = max(0.0, global.sound_volume - volume_increment);	
 		audio_sound_gain(snd_energy_shot, global.sound_volume*0.4, 0);
 		audio_play_sound(snd_energy_shot, 999999, 0);
+		
+		if global.sound_volume == 0.0 {
+			sound_dec_volume.image_alpha = 0	
+		}
+		else {
+			sound_inc_volume.image_alpha = 1
+			sound_dec_volume.image_alpha = 1
+		}
 		
 	}
 	else if position_meeting(mouse_x, mouse_y, ff_inc_mult) {
@@ -93,6 +109,17 @@ if mouse_check_button_pressed(mb_left) {
 		global.option_buff_icon_visible = false;
 		toggle_buff_icons_left.image_alpha = 0
 		toggle_buff_icons_right.image_alpha = 1
+	}
+	
+	else if position_meeting(mouse_x, mouse_y, toggle_language_right) {
+		global.option_language = global.option_language_options.JP;
+		toggle_language_right.image_alpha = 0;
+		toggle_language_left.image_alpha = 1;
+	}
+	else if position_meeting(mouse_x, mouse_y, toggle_language_left) {
+		global.option_language = global.option_language_options.EN;
+		toggle_language_left.image_alpha = 0
+		toggle_language_right.image_alpha = 1
 	}
 
 }

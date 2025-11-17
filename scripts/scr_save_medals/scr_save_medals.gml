@@ -17,6 +17,7 @@ function scr_save_medals(){
 		mooned_music : global.option_replace_mooned_music,
 		fullscreen : global.option_fullscreen,
 		buff_icon : global.option_buff_icon_visible,
+		language: global.option_language,
 	}
 	array_push(save_data, save_struct);
 	

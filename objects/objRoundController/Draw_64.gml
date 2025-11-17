@@ -70,5 +70,5 @@ draw_set_color(c_green)
 draw_text(914,75,string_hash_to_newline("$"+string(floor(global.money))))
 
 draw_set_color(c_red)
-draw_set_font(fPrice)
+draw_set_font(fPrice14)
 draw_text(914,32,string_hash_to_newline("Lives: "+string(global.life)))
