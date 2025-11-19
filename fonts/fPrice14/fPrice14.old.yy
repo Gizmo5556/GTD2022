@@ -1,7 +1,7 @@
 {
   "$GMFont":"",
   "%Name":"fPrice14",
-  "AntiAlias":0,
+  "AntiAlias":1,
   "applyKerning":0,
   "ascender":22,
   "ascenderOffset":0,

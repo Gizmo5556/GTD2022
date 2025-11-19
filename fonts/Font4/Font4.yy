@@ -3,7 +3,7 @@
   "%Name":"Font4",
   "AntiAlias":1,
   "applyKerning":0,
-  "ascender":0,
+  "ascender":17,
   "ascenderOffset":0,
   "bold":false,
   "canGenerateBitmap":true,
@@ -115,7 +115,7 @@
   "italic":false,
   "kerningPairs":[],
   "last":0,
-  "lineHeight":0,
+  "lineHeight":22,
   "maintainGms1Font":false,
   "name":"Font4",
   "parent":{

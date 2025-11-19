@@ -27,3 +27,12 @@ _brightness = 0.8;
 _mix = 0.5; 
 
 show_difficulty = true;
+
+button_difficulty_type = noone;
+
+BUTTON_DIFFICULTY_TYPE = {
+	BEGINNER: 1,
+	INTERMEDIATE: 2,
+	ADVANCED: 3
+}
+

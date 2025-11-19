@@ -146,6 +146,7 @@
   "name":"guy_tower_defense",
   "resources":[
     {"id":{"name":"Glow_Shader","path":"extensions/Glow_Shader/Glow_Shader.yy",},},
+    {"id":{"name":"fKHDot10","path":"fonts/fKHDot10/fKHDot10.yy",},},
     {"id":{"name":"fKHDot16","path":"fonts/fKHDot16/fKHDot16.yy",},},
     {"id":{"name":"fMoney","path":"fonts/fMoney/fMoney.yy",},},
     {"id":{"name":"Font4","path":"fonts/Font4/Font4.yy",},},

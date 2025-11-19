@@ -22,6 +22,13 @@ draw_set_color(c_white);
 //draw_text(x + sprite_width / 2, y - 32, game_name);
 draw_text(x + sprite_width / 2, y - 32, game_room_name);
 draw_set_color(diff_color);
+if global.option_language == global.option_language_options.EN {
+	draw_set_font(fSmall);
+}
+else if global.option_language == global.option_language_options.JP {
+	draw_set_font(fKHDot10);
+}
+
 if show_difficulty {
 	draw_text(x + sprite_width / 2, y - 16, map_diff);
 }

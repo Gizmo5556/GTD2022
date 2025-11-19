@@ -1,6 +1,6 @@
 version 1.2:
 
-	Japanese language option added. Many thanks to syoken!
+	Japanese language option added. Many thanks to syoken! Certain pieces that were more difficult to translate, like map names, were left alone.
 	
 	Replaced one of the fonts because the old one was missing/buggy.
 	

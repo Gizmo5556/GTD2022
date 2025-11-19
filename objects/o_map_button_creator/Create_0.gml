@@ -21,7 +21,14 @@ for (var i = 0; i < array_length(easy_maps); i++) {
 	button.image_yscale = scale;
 	button.game_room_name = easy_names[i];
 	button.map_name = room_get_name(easy_maps[i]);
-	button.map_diff = "Beginner";
+	button.button_difficulty_type = button.BUTTON_DIFFICULTY_TYPE.BEGINNER;
+	if global.option_language == global.option_language_options.EN {
+		button.map_diff = "Beginner";
+	}
+	else if global.option_language == global.option_language_options.JP {
+		button.map_diff = "初級";	
+	}
+		
 }
 
 for (var i = 0; i < array_length(intermediate_maps); i++) {
@@ -30,7 +37,13 @@ for (var i = 0; i < array_length(intermediate_maps); i++) {
 	button.image_yscale = scale;
 	button.game_room_name = intermediate_names[i];
 	button.map_name = room_get_name(intermediate_maps[i]);
-	button.map_diff = "Intermediate";
+	button.button_difficulty_type = button.BUTTON_DIFFICULTY_TYPE.INTERMEDIATE;
+	if global.option_language == global.option_language_options.EN {
+		button.map_diff = "Intermediate";
+	}
+	else if global.option_language == global.option_language_options.JP {
+		button.map_diff = "中級";	
+	}
 }
 for (var i = 0; i < array_length(advanced_maps); i++) {
 	var button = instance_create_layer(advanced_coord_x[i], advanced_coord_y[i], "buttons", o_map_choice_button);
@@ -38,7 +51,13 @@ for (var i = 0; i < array_length(advanced_maps); i++) {
 	button.image_yscale = scale;
 	button.game_room_name = advanced_names[i];
 	button.map_name = room_get_name(advanced_maps[i]);
-	button.map_diff = "Advanced";
+	button.button_difficulty_type = button.BUTTON_DIFFICULTY_TYPE.ADVANCED;
+	if global.option_language == global.option_language_options.EN {
+		button.map_diff = "Advanced";
+	}
+	else if global.option_language == global.option_language_options.JP {
+		button.map_diff = "上級";	
+	}
 }
 
 var button = instance_create_layer(64 + 9.35 * button_sep_x, 213, "buttons", o_map_choice_button_bhole);
@@ -84,16 +103,16 @@ with o_map_choice_button {
 		sprite_index = asset_get_index(sprite_index_string);
 
 		diff_color = c_white;
-		switch (map_diff) {
-			case "Beginner":
+		switch (button_difficulty_type) {
+			case BUTTON_DIFFICULTY_TYPE.BEGINNER:
 			diff_color = c_lime;
 			break;
 	
-			case "Intermediate":
+			case BUTTON_DIFFICULTY_TYPE.INTERMEDIATE:
 			diff_color = c_yellow;
 			break;
 	
-			case "Advanced":
+			case BUTTON_DIFFICULTY_TYPE.ADVANCED:
 			diff_color = c_red;
 			break;
 		}
