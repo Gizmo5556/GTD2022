@@ -37,25 +37,49 @@ if is_choosing_to_continue or is_choosing_freeplay or all_waves_over {
 			text_outline_color = c_white;
 			break;
 	}
-	
-	if is_choosing_to_continue {
-		if not is_freeplay_mode {
-			scrDrawTextOutline(550, text_draw_y, "Give up and go back to the map selection screen", text_color, text_outline_color);
-			scrDrawTextOutline(250, text_draw_y, "Retry this map and difficulty from the beginning", text_color, text_outline_color);
-			scrDrawTextOutline(400, text_draw_y, "Continue this attempt, but you will not earn a medal", text_color, text_outline_color);
-		}	
-		else {
-			scrDrawTextOutline(550, text_draw_y, "Give up and go back to the map selection screen", text_color, text_outline_color);
-			scrDrawTextOutline(250, text_draw_y, "Retry this map and difficulty from the beginning", text_color, text_outline_color);
-			scrDrawTextOutline(400, text_draw_y, "Continue freeplay mode", text_color, text_outline_color);	
+	if global.option_language == global.option_language_options.EN {
+		draw_set_font(fSmall);
+		if is_choosing_to_continue {
+			if not is_freeplay_mode {
+				scrDrawTextOutline(550, text_draw_y, "Give up and go back to the map selection screen", text_color, text_outline_color);
+				scrDrawTextOutline(250, text_draw_y, "Retry this map and difficulty from the beginning", text_color, text_outline_color);
+				scrDrawTextOutline(400, text_draw_y, "Continue this attempt, but you will not earn a medal", text_color, text_outline_color);
+			}	
+			else {
+				scrDrawTextOutline(550, text_draw_y, "Give up and go back to the map selection screen", text_color, text_outline_color);
+				scrDrawTextOutline(250, text_draw_y, "Retry this map and difficulty from the beginning", text_color, text_outline_color);
+				scrDrawTextOutline(400, text_draw_y, "Continue freeplay mode", text_color, text_outline_color);	
+			}
+		}
+		else if is_choosing_freeplay {
+			scrDrawTextOutline(475, text_draw_y, "Go back to the map selection screen", text_color, text_outline_color);
+			scrDrawTextOutline(325, text_draw_y, "Continue in freeplay mode until wave 140", text_color, text_outline_color);
+		}
+		else if all_waves_over {
+			scrDrawTextOutline(400, text_draw_y, "Go back to the map selection screen", text_color, text_outline_color);
 		}
 	}
-	else if is_choosing_freeplay {
-		scrDrawTextOutline(475, text_draw_y, "Go back to the map selection screen", text_color, text_outline_color);
-		scrDrawTextOutline(325, text_draw_y, "Continue in freeplay mode until wave 140", text_color, text_outline_color);
-	}
-	else if all_waves_over {
-		scrDrawTextOutline(400, text_draw_y, "Go back to the map selection screen", text_color, text_outline_color);
+	else if global.option_language == global.option_language_options.JP {
+		draw_set_font(fKHDot12);
+		if is_choosing_to_continue {
+			if not is_freeplay_mode {
+				scrDrawTextOutline(550, text_draw_y, "このマップ\nをやめて、\nステージセ\nレクトに戻る", text_color, text_outline_color);
+				scrDrawTextOutline(250, text_draw_y, "同じマップ\nと難\n易度でやり直す", text_color, text_outline_color);
+				scrDrawTextOutline(400, text_draw_y, "ここから\nまた始める\n(メダルはもらえない)", text_color, text_outline_color);
+			}	
+			else {
+				scrDrawTextOutline(550, text_draw_y, "このマップ\nをやめて、\nステージセ\nレクトに戻る", text_color, text_outline_color);
+				scrDrawTextOutline(250, text_draw_y, "同じマップ\nと難\n易度でやり直す", text_color, text_outline_color);
+				scrDrawTextOutline(400, text_draw_y, "コンティニ\nューして、\nフリープレ\nイを続ける", text_color, text_outline_color);	
+			}
+		}
+		else if is_choosing_freeplay {
+			scrDrawTextOutline(475, text_draw_y, "マップ\n選択に戻る", text_color, text_outline_color);
+			scrDrawTextOutline(325, text_draw_y, "コンティニ\nューして、140\nウェーブまでフリ\nープレイし続ける", text_color, text_outline_color);
+		}
+		else if all_waves_over {
+			scrDrawTextOutline(400, text_draw_y, "マップ選択に戻る", text_color, text_outline_color);
+		}
 	}
 				
 }
@@ -70,5 +94,12 @@ draw_set_color(c_green)
 draw_text(914,75,string_hash_to_newline("$"+string(floor(global.money))))
 
 draw_set_color(c_red)
-draw_set_font(fPrice14)
-draw_text(914,32,string_hash_to_newline("Lives: "+string(global.life)))
+
+if global.option_language == global.option_language_options.EN {
+	draw_set_font(fPrice14)
+	draw_text(914,24,string_hash_to_newline("Lives: "+string(global.life)))
+}
+else if global.option_language == global.option_language_options.JP {
+	draw_set_font(fKHDot16)
+	draw_text(914,24,string_hash_to_newline("体力： "+string(global.life)))
+}

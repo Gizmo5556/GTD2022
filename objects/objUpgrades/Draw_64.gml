@@ -4,13 +4,25 @@ draw_set_valign(fa_top)
 gpu_set_texfilter(false);
 if not is_choosing_direction {
 
-	draw_set_font(fSmall);
-	draw_set_color(c_black);
-	draw_text_ext(x+142, y+72, "Right-click tower to sell for", 16, 180);
-	draw_set_color(c_red);
-	draw_text(x+142, y + 108, "$" + string(ceil(parent.total_money_spent * global.sell_multiplier)));
-	draw_set_font(fSmall);
-	draw_set_color(c_black);
+	if global.option_language == global.option_language_options.EN {
+		draw_set_font(fSmall);
+		draw_set_color(c_black);
+		draw_text_ext(x+142, y+72, "Right-click tower to sell for", 16, 180);
+		draw_set_color(c_red);
+		draw_text(x+142, y + 108, "$" + string(ceil(parent.total_money_spent * global.sell_multiplier)));
+		draw_set_font(fSmall);
+		draw_set_color(c_black);
+	}
+	else if global.option_language == global.option_language_options.JP {
+		draw_set_font(fKHDot12);
+		draw_set_color(c_red);
+		draw_text_ext(x+142, y+72, "タワーの売却額 $" + string(ceil(parent.total_money_spent * global.sell_multiplier)), 16, 180);
+		draw_set_color(c_black);
+		draw_text_ext(x+142, y+108, "(右クリックで売却)", 16, 180);
+	}
+
+	
+	
 	
 	//draw tower icon at left
 	draw_sprite(sprTowerIcon,num,x+32,y+96)	
@@ -54,40 +66,84 @@ if not is_choosing_direction {
 	//draw targeting mode button and text
 	if parent != noone and parent.can_target {
 		
-		
-		switch (parent.targeting_mode) {
-			case 0:
-			draw_text(target_mode_button.x - 0, target_mode_button.y-12, "FIRST");
-			break;
+		if global.option_language == global.option_language_options.EN {
+			draw_set_font(fSmall);
+			draw_set_color(c_black);
+			switch (parent.targeting_mode) {
+				case 0:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "FIRST");
+				break;
 	
-			case 1:
-			draw_text(target_mode_button.x - 0, target_mode_button.y-12, "LAST");
-			break;
+				case 1:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "LAST");
+				break;
 	
-			case 2:
-			draw_text(target_mode_button.x - 0, target_mode_button.y-12, "CLOSE");
-			break;
+				case 2:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "CLOSE");
+				break;
 	
-			case 3:
-			draw_text(target_mode_button.x - 0, target_mode_button.y-12, "STRONG");
-			break;
+				case 3:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "STRONG");
+				break;
 			
-			case 4:
-			draw_text(target_mode_button.x - 0, target_mode_button.y-12, "FOLLOW\nMOUSE");
-			break;
+				case 4:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "FOLLOW\nMOUSE");
+				break;
+			}		
 		}
+		else if global.option_language == global.option_language_options.JP {
+			draw_set_font(fKHDot12);
+			draw_set_color(c_black);
+			switch (parent.targeting_mode) {
+				case 0:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "前列");
+				break;
+	
+				case 1:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "後列");
+				break;
+	
+				case 2:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "接近");
+				break;
+	
+				case 3:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "強力");
+				break;
+			
+				case 4:
+				draw_text(target_mode_button.x - 0, target_mode_button.y-12, "マウス狙い");
+				break;
+			}		
+		}
+		
 	}
 
 	//if tower is alien, draw additional lock/unlock direction button
 	if parent.object_index == objAlien and parent.is_direction_locked {
 		
-		
-		draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "Unlock\nDirection");
-		//draw line showing where alien is firing at
-		//draw_line_width(px, py, px + lengthdir_x(999, parent.locked_direction), py + lengthdir_y(999, parent.locked_direction), 3)
+		if global.option_language == global.option_language_options.EN {
+			draw_set_font(fSmall);
+			draw_set_color(c_black);
+			draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "Unlock\nDirection");
+		}
+		else if global.option_language == global.option_language_options.JP {
+			draw_set_font(fKHDot12);
+			draw_set_color(c_black);
+			draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "ランダム方向");
+		}
 	}
 	else if parent.object_index == objAlien and not parent.is_direction_locked {
-		draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "Lock\nDirection");
+		if global.option_language == global.option_language_options.EN {
+			draw_set_font(fSmall);
+			draw_set_color(c_black);
+			draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "Lock\nDirection");
+		}
+		else if global.option_language == global.option_language_options.JP {
+			draw_set_font(fKHDot12);
+			draw_set_color(c_black);
+			draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "方向ロック");
+		}
 	}
 	
 }
@@ -95,5 +151,14 @@ if not is_choosing_direction {
 //do not draw any of the above if choosing a direction for the alien
 else if is_choosing_direction {
 	draw_set_color(c_black)
-	draw_text_ext(914, 230, "Click where you want this tower to shoot\n\nRight-click to cancel", 16, 128);
+	
+	if global.option_language == global.option_language_options.EN {
+		draw_set_font(fSmall);
+		draw_text_ext(914, 230, "Click where you want this tower to shoot\n\nRight-click to cancel", 16, 128);
+	}
+	else if global.option_language == global.option_language_options.JP {
+		draw_set_font(fKHDot12);
+		draw_set_color(c_black);
+		draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "攻撃を発射する\n場所をクリックで選択 \n\n 右クリックでキャンセル");
+	}
 }

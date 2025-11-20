@@ -26,7 +26,7 @@
     {"name":"s_mapbutton","order":7,"path":"folders/Sprites/map specific/s_mapbutton.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"fKHDot10","order":8,"path":"fonts/fKHDot10/fKHDot10.yy",},
+    {"name":"fKHDot12","order":8,"path":"fonts/fKHDot12/fKHDot12.yy",},
     {"name":"fKHDot16","order":7,"path":"fonts/fKHDot16/fKHDot16.yy",},
     {"name":"fMoney","order":5,"path":"fonts/fMoney/fMoney.yy",},
     {"name":"Font4","order":6,"path":"fonts/Font4/Font4.yy",},

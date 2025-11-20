@@ -59,7 +59,7 @@ else if global.option_language == global.option_language_options.JP {
 	scrDrawTextOutline(x_draw_base_left, y_draw_base + 3*y_diff, "早送り時の倍速速度", c_white, c_black);
 	scrDrawTextOutline(x_draw_base_right, y_draw_base + 3*y_diff, "x" + string(string_format(global.option_fast_forward_multiplier, 1, 1)), c_white, c_black);
 
-	scrDrawTextOutline(x_draw_base_left, y_draw_base + 4*y_diff, "Toggle Info Box during waves", c_white, c_black);
+	scrDrawTextOutline(x_draw_base_left, y_draw_base + 4*y_diff, "説明ボックスを表示する", c_white, c_black);
 
 	scrDrawTextOutline(x_draw_base_left, y_draw_base + 5*y_diff, "catharsisマップでタワーを白黒にする", c_white, c_black);
 

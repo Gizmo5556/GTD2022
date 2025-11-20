@@ -30,10 +30,17 @@ if not show_tower_icons {
 	else {
 		draw_set_valign(fa_bottom);
 		draw_set_halign(fa_center);
-		draw_set_font(fSmall);
-		draw_text(912, 304, "Hover over\nto see towers");
-		draw_set_font(fPrice14)
-		draw_text(912,200,"Wave: "+string(global.wave+1) + "/" + string(global.finalwave + 1));
+		if global.option_language == global.option_language_options.EN {
+			draw_set_font(fSmall);
+			draw_text(912, 304, "Hover over\nto see towers");
+			draw_set_font(fPrice14)
+			draw_text(912,200,"Wave: "+string(global.wave+1) + "/" + string(global.finalwave + 1))
+		}
+		else if global.option_language == global.option_language_options.JP {
+			draw_set_font(fKHDot12);
+			draw_text(912, 304, "カーソルを合わせて\nショップを表示する");
+			draw_set_font(fKHDot16)
+			draw_text(912,200,"ウェーブ："+string(global.wave+1) + "/" + string(global.finalwave + 1))
+		}
 	}
-	
 }

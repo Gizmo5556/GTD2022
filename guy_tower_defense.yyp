@@ -130,7 +130,9 @@
     {"$GMFolder":"","%Name":"map selection","folderPath":"folders/Sprites/UI/map selection.yy","name":"map selection","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_filter_fractal_noise-1.0.0","name":"io.gamemaker.gm_filter_fractal_noise-1.0.0","path":"io.gamemaker.gm_filter_fractal_noise-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"credits (minor spoilers).txt","CopyToMask":3035461389054378222,"filePath":"datafiles","name":"credits (minor spoilers).txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"DBGHELP.dll","CopyToMask":-1,"filePath":"datafiles","name":"DBGHELP.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -141,12 +143,12 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"guy_tower_defense",
   "resources":[
     {"id":{"name":"Glow_Shader","path":"extensions/Glow_Shader/Glow_Shader.yy",},},
-    {"id":{"name":"fKHDot10","path":"fonts/fKHDot10/fKHDot10.yy",},},
+    {"id":{"name":"fKHDot12","path":"fonts/fKHDot12/fKHDot12.yy",},},
     {"id":{"name":"fKHDot16","path":"fonts/fKHDot16/fKHDot16.yy",},},
     {"id":{"name":"fMoney","path":"fonts/fMoney/fMoney.yy",},},
     {"id":{"name":"Font4","path":"fonts/Font4/Font4.yy",},},

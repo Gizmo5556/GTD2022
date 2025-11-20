@@ -31,5 +31,5 @@ with o_spact {
 }
 
 with o_information_box {
-	alarm[0] = ceil(6*room_speed); //last for 6 seconds	
+	timer_until_invisible = ceil(6*room_speed); //last for 6 seconds	
 }

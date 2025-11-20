@@ -33,3 +33,5 @@ info_array[20] = "Black fruit are immune to explosions and contain 2 pink fruit.
 info_array[3] = "You get $1 for each layer of fruit you destroy, and some bonus cash at the end of each round."
 
 visible = false;
+
+timer_until_invisible = 0;

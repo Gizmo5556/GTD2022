@@ -41,7 +41,13 @@ if ind != -999 {
 	draw_text_ext(x, y + sprite_height/2 + 80, global.upgradeDesc[ind], 16, 220);
 }
 else {
-	draw_set_font(fSmall)
-	draw_text(x,y+sprite_height/2+16,"UPGRADES MAXED!");	
+	if global.option_language == global.option_language_options.EN {
+		draw_set_font(fSmall)
+		draw_text(x,y+sprite_height/2+16,"UPGRADES MAXED!");
+	}
+	else if global.option_language == global.option_language_options.JP {
+		draw_set_font(fKHDot12)
+		draw_text(x,y+sprite_height/2+16,"最高アップグレード！");
+	}
 }
 

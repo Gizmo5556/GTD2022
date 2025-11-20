@@ -45,8 +45,16 @@ draw_circle(x,y,rad,false)
 draw_set_color(c_white)
 draw_set_alpha(1)
 
-draw_set_font(fSmall);
-draw_text(x, y - 16, "Right-click to cancel");
+if global.option_language == global.option_language_options.EN {
+	draw_set_font(fSmall);
+	draw_text(x, y - 16, "Right-click to cancel");
+}
+else if global.option_language == global.option_language_options.JP {
+	draw_set_font(fKHDot12);
+	draw_text(x, y - 16, "右クリックでキャンセル");
+}
+
+
 
 
 if global.option_catharsis_shader and room == r_catharsis {
