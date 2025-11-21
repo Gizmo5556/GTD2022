@@ -53,6 +53,8 @@ if state == WANNAFEST_HANDLER_STATES.SPAWNING_CASH {
 	var yy = irandom_range(-8, -32);
 	var dollar = instance_create_layer(xx, yy, "cash_rain", o_wannafest_dollar);
 	dollar.worth = dollar_worth //* global.income_reduction not sure if i should include income_reduction or not
+	
+	//this one stays the same in both EN and JP translations
 	temp_text_to_draw = "MONEY MANIA!!!!!"
 }
 
@@ -65,30 +67,64 @@ if alarm[1] < 2 and temp_text_to_draw == "" and rounds_left_until_event > 0 {
 	else if state == WANNAFEST_HANDLER_STATES.SPINNING_WHEEL and chosen_wheel_option == -1 {
 		text_to_draw = "?????????";	
 	}*/
-	var middle = rounds_left_until_event == 1 ? " Wave" : " Waves";
-	if rounds_left_until_event <= 10 {
-		text_to_draw = string(rounds_left_until_event) + string(middle) + " Until\n" + string(event_name);
+	if global.option_language == global.option_language_options.EN {
+		var middle = rounds_left_until_event == 1 ? " Wave" : " Waves";
+		if rounds_left_until_event <= 10 {
+			text_to_draw = string(rounds_left_until_event) + string(middle) + " Until\n" + string(event_name);
+		}
+		else {
+			//if this is the final wave (global.max_wave), rounds_left_until_event will be 999999
+			//therefore, don't display text except for the wheel event activated on that wave
+			text_to_draw = "";
+		}
 	}
-	else {
-		//if this is the final wave (global.max_wave), rounds_left_until_event will be 999999
-		//therefore, don't display text except for the wheel event activated on that wave
-		text_to_draw = "";
+	else if global.option_language == global.option_language_options.JP {
+		var middle = "ウェーブ後に"; //same for singular and plural Wave
+		if rounds_left_until_event <= 10 {
+			if event_name == "Money Mania" {
+				text_to_draw = string(rounds_left_until_event) + "ウェーブ後にMoney Mania";
+			}
+			else if event_name == "Wheel of Misfortune" {
+				text_to_draw = "不幸のルーレットが回るまで後" + string(rounds_left_until_event) + "ウェーブ";
+			}
+		}
+		else {
+			text_to_draw = "";
+		}
 	}
 }
 else if alarm[1] > 0 {
-	switch chosen_wheel_option {
-		case WANNAFEST_WHEEL_OPTIONS.REVERSE_PATH:
-			temp_text_to_draw = "Reverse Path!"
-			break;
-		case WANNAFEST_WHEEL_OPTIONS.SPEEDUP:
-			temp_text_to_draw = "Speed Up!"
-			break;
-		case WANNAFEST_WHEEL_OPTIONS.BOSS_REGEN:
-			temp_text_to_draw = "Regen Bosses!"
-			break;
-		case WANNAFEST_WHEEL_OPTIONS.CHERRY_RAIN:
-			temp_text_to_draw = "Fruit Rain!";
-			break;
+	if global.option_language == global.option_language_options.EN {
+		switch chosen_wheel_option {
+			case WANNAFEST_WHEEL_OPTIONS.REVERSE_PATH:
+				temp_text_to_draw = "Reverse Path!"
+				break;
+			case WANNAFEST_WHEEL_OPTIONS.SPEEDUP:
+				temp_text_to_draw = "Speed Up!"
+				break;
+			case WANNAFEST_WHEEL_OPTIONS.BOSS_REGEN:
+				temp_text_to_draw = "Regen Bosses!"
+				break;
+			case WANNAFEST_WHEEL_OPTIONS.CHERRY_RAIN:
+				temp_text_to_draw = "Fruit Rain!";
+				break;
+		}
+	}
+	else if global.option_language == global.option_language_options.JP {
+		switch chosen_wheel_option {
+			case WANNAFEST_WHEEL_OPTIONS.REVERSE_PATH:
+				temp_text_to_draw = "ルート反転！"
+				break;
+			case WANNAFEST_WHEEL_OPTIONS.SPEEDUP:
+				temp_text_to_draw = "スピードアップ！"
+				break;
+			case WANNAFEST_WHEEL_OPTIONS.BOSS_REGEN:
+				temp_text_to_draw = "ボスの怒り！"
+				break;
+			case WANNAFEST_WHEEL_OPTIONS.CHERRY_RAIN:
+				temp_text_to_draw = "りんごの雨！";
+				break;
+		}
 	}
 	text_to_draw = temp_text_to_draw;
 	wheel_timer_text = temp_text_to_draw;

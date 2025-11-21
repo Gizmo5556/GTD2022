@@ -1,7 +1,14 @@
-mainInit()
+go_to_language_pick_room = false;
+
+mainInit();
 randomize();
-shouldSaveOnRoomStart = false
-room_goto(rTitle)
+shouldSaveOnRoomStart = false;
+if go_to_language_pick_room {
+	room_goto(rLanguagePick);	
+}
+else {
+	room_goto(rTitle)
+}
 
 target_depth = 244;
 depth = target_depth;

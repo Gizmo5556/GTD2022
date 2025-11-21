@@ -48,9 +48,12 @@ function scr_load_medals(){
 			global.option_language = load_struct.language;
 		}
 		catch (_exception) {
-			global.option_language = global.option_language_options.EN;
+			oController.go_to_language_pick_room = true;
 		}
 		window_set_fullscreen(global.option_fullscreen);
+	}
+	else {
+		oController.go_to_language_pick_room = true;
 	}
 	
 	

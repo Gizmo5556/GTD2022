@@ -5,3 +5,4 @@ if saved_state == 1 {
 else {
 	room_speed = 50*global.option_fast_forward_multiplier;
 }
+show_debug_message(room_speed);

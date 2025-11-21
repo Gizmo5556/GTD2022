@@ -45,7 +45,7 @@ else if global.option_language == global.option_language_options.JP {
 
 	draw_set_color(c_white);
 
-	scrDrawTextOutline(80, 488, "保存してマッ\n\nプ選択に戻る", c_white, c_black);
+	scrDrawTextOutline(80, 488, "保存してマップ\n\n選択に戻る", c_white, c_black);
 
 	scrDrawTextOutline(x_draw_base_left, y_draw_base, "BGM音量", c_white, c_black);
 	scrDrawTextOutline(x_draw_base_right, y_draw_base, string(round(global.music_volume * 100)), c_white, c_black);

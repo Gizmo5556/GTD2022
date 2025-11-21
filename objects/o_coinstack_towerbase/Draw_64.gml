@@ -5,10 +5,20 @@ if moused and num_times_used < 6 {
 
 	draw_sprite_ext(s_upgrade_info, 0, draw_x, draw_y, 1, 1, 0, global.image_blend_for_UI, 1);
 	
-	draw_set_font(fSmall);
-	draw_set_color(c_black);
-	draw_text_ext(draw_x, draw_y+16, "Permanently add to the coin tower for", 16, 128);
-	draw_set_color(c_green);
-	draw_text(draw_x, draw_y + 96, "$" + string(ceil(current_price_array[num_times_used])));
-	
+	if global.option_language == global.option_language_options.EN {
+		draw_set_font(fSmall);
+		draw_set_color(c_black);
+		draw_text_ext(draw_x, draw_y+16, "Permanently add to the coin tower for", 16, 128);
+		draw_set_color(c_green);
+		draw_text(draw_x, draw_y + 96, "$" + string(ceil(current_price_array[num_times_used])));
+	}
+	else if global.option_language == global.option_language_options.JP {
+		draw_set_font(fKHDot12);
+		draw_set_color(c_black);
+		draw_text_ext(draw_x, draw_y+16, "コインタワーを", 16, 128);
+		draw_set_color(c_green);
+		draw_text_ext(draw_x, draw_y+40, "$" + string(ceil(current_price_array[num_times_used])), 16, 128);
+		draw_set_color(c_black);
+		draw_text_ext(draw_x, draw_y+64, "で高くする", 16, 128);
+	}
 }

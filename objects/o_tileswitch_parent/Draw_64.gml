@@ -10,10 +10,25 @@ if moused and not triggered_for_current_round {
 	}
 	
 	
-	draw_set_font(fSmall);
-	draw_set_color(c_black);
-	draw_text_ext(draw_x, draw_y+12, "Activate the " + color + " blocks for one round for", 16, 124);
-	draw_set_color(c_green);
-	draw_text(draw_x, draw_y + 96, "$" + string(ceil(current_price)));
+	if global.option_language == global.option_language_options.EN {
+		draw_set_font(fSmall);
+		draw_set_color(c_black);
+		draw_text_ext(draw_x, draw_y+12, "Activate the " + color + " blocks for one round for", 16, 124);
+		draw_set_color(c_green);
+		draw_text(draw_x, draw_y + 96, "$" + string(ceil(current_price)));
+	}
+	else if global.option_language == global.option_language_options.JP {
+		draw_set_font(fKHDot12);
+		draw_set_color(c_green);
+		draw_text(draw_x, draw_y + 12, "$" + string(ceil(current_price)));
+		draw_set_color(c_black);
+		if color == "blue" { var text = "で1ウェーブだけ\n青\nブロックを\n有効化する"}
+		if color == "red" { var text = "で1ウェーブだけ\n赤\nブロックを\n有効化する"}
+		if color == "yellow" { var text = "で1ウェーブだけ\n黄\nブロックを\n有効化する"}
+		if color == "pink" { var text = "で1ウェーブだけ\nピンク\nブロックを\n有効化する"}
+
+		draw_text_ext(draw_x, draw_y+40, text, 16, 124);
+		
+	}
 	
 }
