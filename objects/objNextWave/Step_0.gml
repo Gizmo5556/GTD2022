@@ -1,8 +1,8 @@
 image_index = state;
 if saved_state == 1 {
-	room_speed = 50;	
+	game_set_speed(50, gamespeed_fps);
 }
 else {
-	room_speed = 50*global.option_fast_forward_multiplier;
+	game_set_speed(50*global.option_fast_forward_multiplier, gamespeed_fps);
 }
-show_debug_message(room_speed);
+

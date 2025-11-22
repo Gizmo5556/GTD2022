@@ -1,7 +1,7 @@
 //restart game from title screen
 if keyboard_check_pressed(vk_f2) {
 	 //must reset global variables and clean up data structures in towers
-	room_speed = 50;
+	game_set_speed(50, gamespeed_fps);
 	with objTower {instance_destroy();}
 	
 	//delete dynamically created paths (will be recreated in mainInit script)

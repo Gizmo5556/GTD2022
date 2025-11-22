@@ -15,8 +15,8 @@ else if dist <= 80 {
 	homing = true;	
 }
 else {
-	vspeed = vspeed_orig/room_speed;
-	hspeed = hspeed_orig/room_speed;	
+	vspeed = vspeed_orig/game_get_speed(gamespeed_fps);
+	hspeed = hspeed_orig/game_get_speed(gamespeed_fps);	
 }
 
 

@@ -31,5 +31,5 @@ with o_spact {
 }
 
 with o_information_box {
-	timer_until_invisible = ceil(6*room_speed); //last for 6 seconds	
+	timer_until_invisible = ceil(6*game_get_speed(gamespeed_fps)); //last for 6 seconds	
 }

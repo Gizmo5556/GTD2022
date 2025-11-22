@@ -3,8 +3,8 @@
 //i have no idea what the issue is but it's close enough so I'm not touching it
 //ALSO DON'T try to spin it CLOCKWISE, that also messes with the math which is slightly broken but still works so oh well
 
-wheel_decel = 0.2 * room_speed / 50;
-wheel_vel = irandom_range(30, 35) * room_speed / 50;
+wheel_decel = 0.2 * game_get_speed(gamespeed_fps) / 50;
+wheel_vel = irandom_range(30, 35) * game_get_speed(gamespeed_fps) / 50;
 is_spinning = true;
 image_angle = irandom_range(0, 359);
 final_image_angle = image_angle;

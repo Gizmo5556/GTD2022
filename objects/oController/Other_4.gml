@@ -9,7 +9,7 @@ with oPlayerStart {
     }
 }
 
-room_speed = 50;
+game_set_speed(50, gamespeed_fps);
 
 global.number_of_bosses_spawned = 0;
 global.number_of_fruit_spawned = 0;

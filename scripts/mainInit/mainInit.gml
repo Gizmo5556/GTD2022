@@ -556,4 +556,11 @@ function mainInit() {
 	scrUpgradePrices();
 	scr_set_tower_desc();
 	
+	
+	//After updating to Gamemaker 2024.14, a weird bug appeared...
+	//...where any room_speed or game_set_speed() >= 120 will cause the actual fps to go way higher.
+	//it seems that the default timing method got switched from tm_sleep to tm_countvsyncs, so here we switch it back
+	//Additionally, show_debug_message("any string") in objNextWave.Step can "fix" the bug too, though I have no idea why
+	display_set_timing_method(tm_sleep)
+	
 }
