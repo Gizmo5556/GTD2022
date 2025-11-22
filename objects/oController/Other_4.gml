@@ -23,7 +23,7 @@ scr_play_music();
 if instance_exists (objRoundController) {
 		switch(global.current_difficulty) {
 		case 0: //medium
-			global.money = 800;
+			global.money = 800000000;
 	        global.spd = 1.296; //90% of hard
 	        global.life = scr_get_starting_health(global.current_difficulty);
 	        global.finalwave = 39;

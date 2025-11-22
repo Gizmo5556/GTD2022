@@ -1,4 +1,4 @@
-version 1.2:
+version 1.11:
 
 	Japanese language option added. Many thanks to syoken! Certain pieces that were more difficult to translate, like map names, were left alone.
 	
@@ -8,7 +8,10 @@ version 1.2:
 	
 	Fixed a bug where buttons for changing sound volume were visible when they weren't supposed to be.
 
-
+	Balance changes:
+	
+		Buffed Boshy
+			Slightly decreased cost of Tier 3 and Tier 5 upgrades
 
 
 version 1.1:
