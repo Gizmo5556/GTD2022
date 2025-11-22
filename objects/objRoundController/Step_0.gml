@@ -98,6 +98,10 @@ if player_has_died or player_wins_round {
 				instance_destroy();	
 			}
 		}
+		
+		with o_information_box {
+			timer_until_invisible = ceil(6*game_get_speed(gamespeed_fps)); //last for 6 seconds	
+		}
 	
 		///room specific junk
 		//r_butterfly

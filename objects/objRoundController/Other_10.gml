@@ -29,7 +29,3 @@ with o_spact {
 		fast_start_time_left = fast_start_time_left_max;	
 	}
 }
-
-with o_information_box {
-	timer_until_invisible = ceil(6*game_get_speed(gamespeed_fps)); //last for 6 seconds	
-}

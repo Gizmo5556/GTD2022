@@ -1,17 +1,24 @@
 version 1.11:
 
-	Japanese language option added. Many thanks to syoken! Certain pieces that were more difficult to translate, like map names, were left alone.
+	Japanese language option added. Many thanks to syoken for their translations! Certain pieces that were more difficult to translate, like map names, were left alone.
 	
 	Replaced one of the fonts because the old one was missing/buggy.
-	
-	Nerfed wave 74
-	
-	Fixed a bug where buttons for changing sound volume were visible when they weren't supposed to be.
+
 
 	Balance changes:
 	
 		Buffed Boshy
 			Slightly decreased cost of Tier 3 and Tier 5 upgrades
+			
+		Nerfed wave 74
+
+			
+	Bug fixes:
+	
+		Fixed a bug where buttons for changing sound volume were visible when they weren't supposed to be.
+		
+		Fixed the info box disappearing too early, before the next round started.
+		
 
 
 version 1.1:
