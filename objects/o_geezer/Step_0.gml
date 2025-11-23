@@ -249,14 +249,16 @@ if has_cursor and cursor_cooldown == 0 and collision_circle(x,y,radius * 3,objAp
 	cursor_target = scr_get_cursor_target();
 	if cursor_target != noone {
 		
-		cursor_cooldown = cursor_cooldown_max;
 		
-		/*if cursor_target.object_index == objAppleZOMG {
-			cursors_left -= 2;	
+		if cursor_target.object_index == objAppleZOMG {
+			//double cooldown for ZOMGs
+			cursor_cooldown = round(1.5 * cursor_cooldown_max);
 		}
 		else {
-			cursors_left -= 1;	
-		}*/
+			cursor_cooldown = cursor_cooldown_max;
+		}
+		
+		
 		
 		cursor = instance_create_layer(x, y, "Bullets", o_cursor);
 		cursor.target_x = round(cursor_target.x);

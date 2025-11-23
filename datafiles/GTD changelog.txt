@@ -10,6 +10,9 @@ version 1.11:
 		Buffed Boshy
 			Slightly decreased cost of Tier 3 and Tier 5 upgrades
 			
+		Nerfed Geezer
+			Tier 5's cursors now have a longer cooldown when attacking Green Devils. Cooldown after attacking Blue/Red Devils remains the same.
+			
 		Nerfed wave 74
 
 			
