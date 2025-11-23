@@ -611,7 +611,7 @@ function scrUpgradePrices() {
 		global.upgradeText[69] = "超最強";
 	
 		global.upgradeDesc[65] = "射程と攻撃\nの範囲が拡大される";
-		global.upgradeDesc[66] = "攻撃間隔が短くなり、\n凍結時間が長くなった。\nまた、鉛りんごと忍者りんごも\n攻撃可能になる";
+		global.upgradeDesc[66] = "攻撃間隔が短くなり、\n凍結時間が長くなる。\nまた、鉛りんごと忍者りんご\nも攻撃可能になる";
 		global.upgradeDesc[67] = "近くの通路\nに氷の壁を生成する。\n氷の壁に触れたりんご\nは一気にダメージを受ける";
 		global.upgradeDesc[68] = "射程が広くなり、\nダメージが高い氷投げ攻撃\nを習得する氷は忍者りんご\nの隠れ身の術効果と回復りんご\nの回復効果を解除する"
 		global.upgradeDesc[69] = "氷がボスに超大ダメージ\nを与えて、\nりんごの動くを遅く\nするようになるまた、\nその効果はずっと持続する";
@@ -647,7 +647,7 @@ function scrUpgradePrices() {
 	
 	
 		//viridian
-		global.upgradeText[80] = "愛らしい爆発";
+		global.upgradeText[80] = "ラブラブ爆弾";
 		global.upgradeText[81] = "高速航空機";
 		global.upgradeText[82] = "強力蒸発装置";
 		global.upgradeText[83] = "忍耐強い針";

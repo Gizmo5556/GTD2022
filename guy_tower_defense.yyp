@@ -148,10 +148,7 @@
   "name":"guy_tower_defense",
   "resources":[
     {"id":{"name":"Glow_Shader","path":"extensions/Glow_Shader/Glow_Shader.yy",},},
-    {"id":{"name":"fKHDot12","path":"fonts/fKHDot12/fKHDot12.yy",},},
-    {"id":{"name":"fKHDot16","path":"fonts/fKHDot16/fKHDot16.yy",},},
     {"id":{"name":"fKHDotHibiya12","path":"fonts/fKHDotHibiya12/fKHDotHibiya12.yy",},},
-    {"id":{"name":"fKHDotKi12","path":"fonts/fKHDotKi12/fKHDotKi12.yy",},},
     {"id":{"name":"fKHDotKi16","path":"fonts/fKHDotKi16/fKHDotKi16.yy",},},
     {"id":{"name":"fMoney","path":"fonts/fMoney/fMoney.yy",},},
     {"id":{"name":"Font4","path":"fonts/Font4/Font4.yy",},},

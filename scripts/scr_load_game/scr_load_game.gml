@@ -157,7 +157,28 @@ function scr_load_game(){
 				pile.image_blend = load_struct.img_blend;
 			}
 			else if load_struct.obj_type_str == "tower" {
-				var tower = instance_create_layer(load_struct.x, load_struct.y, "Towers", load_struct.obj);
+				var tower = noone;
+				try {
+					//first try to load using the hardcoded tower index, NOT the object_index, which gamemaker can change as game versions change :/
+					//(New to v.11)
+					var obj_tower = scr_get_obj_tower_from_tower_index(load_struct.obj_tower_index);
+					tower = instance_create_layer(load_struct.x, load_struct.y, "Towers", obj_tower);
+					//show_debug_message("case 1 success")
+				} catch (_exception) {
+					//if that fails, try to load using the object_index
+					tower = instance_create_layer(load_struct.x, load_struct.y, "Towers", load_struct.obj);
+					if not object_is_ancestor(tower.object_index, objTower) {
+						// if we managed to somehow load some other object, just skip this tower and refund the money.
+						instance_destroy(tower);
+						global.money += load_struct.money_spent;
+						//show_debug_message("case 2 failure")
+						continue;
+					}
+					//show_debug_message("case 2 success")
+				}
+				if not object_exists(tower) { continue; }
+				show_debug_message(object_get_name(tower.object_index));
+				show_debug_message(load_struct.targeting_mode);
 				tower.targeting_mode = load_struct.targeting_mode;
 				tower.is_direction_locked = load_struct.is_direction_locked;
 				tower.locked_direction = load_struct.locked_direction;

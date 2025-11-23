@@ -35,11 +35,11 @@ else if global.option_language == global.option_language_options.JP {
 
 	draw_text(524, 150, "\n選択したマップと難易度にはセーブデータが存在します。\n続きから始めますか？それとも最初から始めますか？");
 
-	draw_set_font(fKHDotHibiya12);
+	draw_set_font(fKHDotKi16);
 
-	draw_text_ext(new_game_button.x, new_game_button.y - 120, "初めからして、\nセーブデータを上書きする", 16, 128);
+	draw_text_ext(new_game_button.x, new_game_button.y - 120, "初めからして、\nセーブデータを上書き\nする", 24, 128);
 
-	draw_text_ext(load_save_button.x, load_save_button.y - 120, "続きから始めて\nコンティニューする", 16, 128);
+	draw_text_ext(load_save_button.x, load_save_button.y - 120, "続きから始めて\nコンティニュー\nする", 24, 128);
 
-	draw_text_ext(back_to_maps_button.x, back_to_maps_button.y - 120, "マップ選択画面に戻る", 16, 128);
+	draw_text_ext(back_to_maps_button.x, back_to_maps_button.y - 120, "マップ選択\n画面に戻る", 24, 128)
 }

@@ -10,6 +10,7 @@ function scr_save_game(){
 		{
 			obj_type_str: "tower",
 			obj: object_index,
+			obj_tower_index: scr_get_tower_index(self.object_index),
 			x : x,
 			y : y,
 			num_upgrades : upgrade_count,
