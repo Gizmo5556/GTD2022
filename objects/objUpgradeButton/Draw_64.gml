@@ -32,7 +32,7 @@ if global.option_language == global.option_language_options.EN {
 	draw_set_font(fPrice14);
 }
 else if global.option_language == global.option_language_options.JP {
-	draw_set_font(fKHDot16);
+	draw_set_font(fKHDotKi16);
 }
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
@@ -43,7 +43,7 @@ if ind != -999 {
 		draw_set_font(fSmall)
 	}
 	else if global.option_language == global.option_language_options.JP {
-		draw_set_font(fKHDot12);
+		draw_set_font(fKHDotHibiya12);
 	}
 	draw_text(x,y+sprite_height/2+8,global.upgradeText[ind]);
 
@@ -56,7 +56,7 @@ else {
 		draw_text(x,y+sprite_height/2+16,"UPGRADES MAXED!");
 	}
 	else if global.option_language == global.option_language_options.JP {
-		draw_set_font(fKHDot12)
+		draw_set_font(fKHDotHibiya12)
 		draw_text(x,y+sprite_height/2+16,"最高アップグレード！");
 	}
 }

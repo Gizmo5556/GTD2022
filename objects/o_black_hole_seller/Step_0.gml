@@ -1,7 +1,7 @@
 ///@desc the actual gimmick
 if round_cooldown == 0 and position_meeting(mouse_x, mouse_y, id) and not instance_exists(objPlacer) {
 	moused = true;
-	if mouse_check_button_pressed(mb_left) {
+	if mouse_check_button_pressed(mb_left) and global.money >= current_price {
 		round_cooldown = round_cooldown_max;
 		global.money -= current_price;
 		audio_play_sound(sndMoney,0,0);

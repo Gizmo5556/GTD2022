@@ -28,9 +28,9 @@ if not show_tower_icons {
 			draw_text_ext(914, 282, global.tower_desc[ind], 16, 220);
 		}
 		else if global.option_language == global.option_language_options.JP {
-			draw_set_font(fKHDot16);
+			draw_set_font(fKHDotKi16);
 			draw_text_ext(914, 232, global.tower_name[ind], 16, 220);
-			draw_set_font(fKHDot12);
+			draw_set_font(fKHDotHibiya12);
 			draw_text_ext(914, 282, global.tower_desc[ind], 16, 220);
 		}
 	}
@@ -44,9 +44,9 @@ if not show_tower_icons {
 			draw_text(912,200,"Wave: "+string(global.wave+1) + "/" + string(global.finalwave + 1))
 		}
 		else if global.option_language == global.option_language_options.JP {
-			draw_set_font(fKHDot12);
+			draw_set_font(fKHDotHibiya12);
 			draw_text(912, 304, "カーソルを合わせて\nショップを表示する");
-			draw_set_font(fKHDot16)
+			draw_set_font(fKHDotKi16)
 			draw_text(912,200,"ウェーブ："+string(global.wave+1) + "/" + string(global.finalwave + 1))
 		}
 	}

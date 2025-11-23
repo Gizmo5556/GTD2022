@@ -50,7 +50,7 @@ if global.option_language == global.option_language_options.EN {
 	draw_text(x, y - 16, "Right-click to cancel");
 }
 else if global.option_language == global.option_language_options.JP {
-	draw_set_font(fKHDot12);
+	draw_set_font(fKHDotHibiya12);
 	draw_text(x, y - 16, "右クリックでキャンセル");
 }
 

@@ -60,7 +60,7 @@ if is_choosing_to_continue or is_choosing_freeplay or all_waves_over {
 		}
 	}
 	else if global.option_language == global.option_language_options.JP {
-		draw_set_font(fKHDot12);
+		draw_set_font(fKHDotHibiya12);
 		if is_choosing_to_continue {
 			if not is_freeplay_mode {
 				scrDrawTextOutline(550, text_draw_y, "このマップ\nをやめて、\nステージセ\nレクトに戻る", text_color, text_outline_color);
@@ -100,6 +100,6 @@ if global.option_language == global.option_language_options.EN {
 	draw_text(914,24,string_hash_to_newline("Lives: "+string(global.life)))
 }
 else if global.option_language == global.option_language_options.JP {
-	draw_set_font(fKHDot16)
+	draw_set_font(fKHDotKi16)
 	draw_text(914,24,string_hash_to_newline("体力： "+string(global.life)))
 }

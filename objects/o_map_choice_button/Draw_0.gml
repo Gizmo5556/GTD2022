@@ -26,7 +26,7 @@ if global.option_language == global.option_language_options.EN {
 	draw_set_font(fSmall);
 }
 else if global.option_language == global.option_language_options.JP {
-	draw_set_font(fKHDot12);
+	draw_set_font(fKHDotHibiya12);
 }
 
 if show_difficulty {

@@ -39,7 +39,7 @@ if global.option_language == global.option_language_options.EN {
 }
 
 else if global.option_language == global.option_language_options.JP {
-	draw_set_font(fKHDot16);
+	draw_set_font(fKHDotKi16);
 	draw_set_valign(fa_middle);
 	draw_set_halign(fa_center);
 

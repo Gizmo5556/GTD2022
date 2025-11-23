@@ -11,7 +11,7 @@ if global.option_language == global.option_language_options.EN {
 	draw_text_ext(x, y, info_array[global.wave + 1], 16, 600);
 }
 else if global.option_language == global.option_language_options.JP {
-	draw_set_font(fKHDot16);
+	draw_set_font(fKHDotKi16);
 	//draw lines further apart
 	draw_text_ext(x, y, info_array[global.wave + 1], 24, 600);
 }
@@ -23,6 +23,6 @@ if global.option_language == global.option_language_options.EN {
 	draw_text(x, y + 84, "Click to dismiss");	
 }
 else if global.option_language == global.option_language_options.JP {
-	draw_set_font(fKHDot12);
+	draw_set_font(fKHDotHibiya12);
 	draw_text(x, y + 84, "クリックで閉じる");
 }

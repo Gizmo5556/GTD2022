@@ -13,7 +13,7 @@ if moused and num_times_used < 6 {
 		draw_text(draw_x, draw_y + 96, "$" + string(ceil(current_price_array[num_times_used])));
 	}
 	else if global.option_language == global.option_language_options.JP {
-		draw_set_font(fKHDot12);
+		draw_set_font(fKHDotHibiya12);
 		draw_set_color(c_black);
 		draw_text_ext(draw_x, draw_y+16, "コインタワーを", 16, 128);
 		draw_set_color(c_green);

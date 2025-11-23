@@ -14,7 +14,7 @@ if not is_choosing_direction {
 		draw_set_color(c_black);
 	}
 	else if global.option_language == global.option_language_options.JP {
-		draw_set_font(fKHDot12);
+		draw_set_font(fKHDotHibiya12);
 		draw_set_color(c_red);
 		draw_text_ext(x+142, y+72, "タワーの売却額 $" + string(ceil(parent.total_money_spent * global.sell_multiplier)), 16, 180);
 		draw_set_color(c_black);
@@ -92,7 +92,7 @@ if not is_choosing_direction {
 			}		
 		}
 		else if global.option_language == global.option_language_options.JP {
-			draw_set_font(fKHDot12);
+			draw_set_font(fKHDotHibiya12);
 			draw_set_color(c_black);
 			switch (parent.targeting_mode) {
 				case 0:
@@ -128,7 +128,7 @@ if not is_choosing_direction {
 			draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "Unlock\nDirection");
 		}
 		else if global.option_language == global.option_language_options.JP {
-			draw_set_font(fKHDot12);
+			draw_set_font(fKHDotHibiya12);
 			draw_set_color(c_black);
 			draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "ランダム方向");
 		}
@@ -140,7 +140,7 @@ if not is_choosing_direction {
 			draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "Lock\nDirection");
 		}
 		else if global.option_language == global.option_language_options.JP {
-			draw_set_font(fKHDot12);
+			draw_set_font(fKHDotHibiya12);
 			draw_set_color(c_black);
 			draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "方向ロック");
 		}
@@ -157,7 +157,7 @@ else if is_choosing_direction {
 		draw_text_ext(914, 230, "Click where you want this tower to shoot\n\nRight-click to cancel", 16, 128);
 	}
 	else if global.option_language == global.option_language_options.JP {
-		draw_set_font(fKHDot12);
+		draw_set_font(fKHDotHibiya12);
 		draw_set_color(c_black);
 		draw_text(lock_direction_button.x - 0, lock_direction_button.y-16, "攻撃を発射する\n場所をクリックで選択 \n\n 右クリックでキャンセル");
 	}

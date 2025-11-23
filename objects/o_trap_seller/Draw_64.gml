@@ -20,7 +20,7 @@ if moused {
 		draw_text(draw_x, draw_y + 96, "$" + string(ceil(trap_price)));
 	}
 	else if global.option_language == global.option_language_options.JP {
-		draw_set_font(fKHDot12);
+		draw_set_font(fKHDotHibiya12);
 		draw_set_color(c_black);
 		
 		if name == "trap" {

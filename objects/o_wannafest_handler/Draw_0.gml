@@ -21,7 +21,7 @@ if should_draw_gui {
 			draw_set_font(fMoney);
 		}
 		else if global.option_language == global.option_language_options.JP {
-			draw_set_font(fKHDot16);
+			draw_set_font(fKHDotKi16);
 		}
 		draw_text(400, 128, text_to_draw)
 		//draw_set_font(fMoney);

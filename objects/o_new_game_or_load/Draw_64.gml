@@ -25,7 +25,7 @@ if global.option_language == global.option_language_options.EN {
 }
 
 else if global.option_language == global.option_language_options.JP {
-	draw_set_font(fKHDot16);
+	draw_set_font(fKHDotKi16);
 
 	draw_set_color(c_red)
 
@@ -35,7 +35,7 @@ else if global.option_language == global.option_language_options.JP {
 
 	draw_text(524, 150, "\n選択したマップと難易度にはセーブデータが存在します。\n続きから始めますか？それとも最初から始めますか？");
 
-	draw_set_font(fKHDot12);
+	draw_set_font(fKHDotHibiya12);
 
 	draw_text_ext(new_game_button.x, new_game_button.y - 120, "初めからして、\nセーブデータを上書きする", 16, 128);
 
