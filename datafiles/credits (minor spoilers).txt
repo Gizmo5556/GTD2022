@@ -2,8 +2,10 @@ special thanks to the community for helping with bugs/development, especially to
 special thanks to denferok and patrick for letting me use their art
 special thanks to tamano for suggesting and helping with the Duloxetine map
 special thanks to tijit for their shader in the neon map
+special thanks to syoken for their Japanese translations
 
 speical thanks to the testers:
+syoken
 MediocreOmen
 FictioN
 MKey

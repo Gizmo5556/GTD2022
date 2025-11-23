@@ -22,6 +22,8 @@ version 1.11:
 		
 		Fixed the info box disappearing too early, before the next round started.
 		
+		*Hopefully* fixed a bug that could break saves between further game updates. I believe your medals.sav should be fine, but some individual map .sav files may be corrupt, due to the new update. If this happens, the new version will attempt to refund any tower that it fails to load. Other objects like spike piles may also load with the incorrect sprite, but there's not much I can do about that without risking further issues. I'm hoping that I've fixed the main issue so any further updates will not need this workaround. I apologize for the inconvenience!
+		
 
 
 version 1.1:
