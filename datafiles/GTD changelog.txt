@@ -1,3 +1,8 @@
+version 1.111:
+
+	Several fixes to Japanese translation.
+
+
 version 1.11:
 
 	Japanese language option added. Many thanks to syoken for their translations! Certain pieces that were more difficult to translate, like map names, were left alone.

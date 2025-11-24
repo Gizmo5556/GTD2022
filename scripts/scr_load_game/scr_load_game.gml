@@ -170,13 +170,14 @@ function scr_load_game(){
 					if not object_is_ancestor(tower.object_index, objTower) {
 						// if we managed to somehow load some other object, just skip this tower and refund the money.
 						instance_destroy(tower);
+						tower = noone;
 						global.money += load_struct.money_spent;
 						//show_debug_message("case 2 failure")
 						continue;
 					}
 					//show_debug_message("case 2 success")
 				}
-				if not object_exists(tower) { continue; }
+				if tower == noone { continue; }
 				show_debug_message(object_get_name(tower.object_index));
 				show_debug_message(load_struct.targeting_mode);
 				tower.targeting_mode = load_struct.targeting_mode;

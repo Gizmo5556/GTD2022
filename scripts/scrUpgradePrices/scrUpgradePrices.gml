@@ -493,7 +493,7 @@ function scrUpgradePrices() {
 		global.upgradeText[28] = "クリティカルショット";
 		global.upgradeText[29] = "真の姿";
 	
-		global.upgradeDesc[25] = "射程が少し増加";
+		global.upgradeDesc[25] = "射程がかなり増加";
 		global.upgradeDesc[26] = "手榴弾を投げて炎を拡散し、\n鉛りんごに追加\nダメージを与えるようになる。\nそして、貫通力も上がる";
 		global.upgradeDesc[27] = "貫通力が上がり、\n忍者りんごを倒せる\nようになるまた、\n手榴弾攻撃が強化される";
 		global.upgradeDesc[28] = "ボスに与えるダメージ\nが大幅に増加する。\nまた、\n数発ごとに\nクリティカルヒットになり、\nりんごを吹き飛ばせる";
@@ -569,7 +569,7 @@ function scrUpgradePrices() {
 		global.upgradeDesc[50] = "攻撃が当たった後のりんご\nは速度低下の効果持続\n時間が大幅に延長される";
 		global.upgradeDesc[51] = "バグりんごに攻撃が当たると、\nその弾が一度跳ね返って飛ぶ";
 		global.upgradeDesc[52] = "ボスにバグが通用\nするようになり、\n攻撃の貫通力が上がる";
-		global.upgradeDesc[53] = "通路の半分まで\nりんごが進むと、\nバグりんごの移動速度\nがさらに遅くなる\nクールダウンは60秒ありまた、\n効果を溜めることも可能である";
+		global.upgradeDesc[53] = "通路の\n半分までりんごが進むと、\nバグりんごの移動速度が\nさらに遅くなるクールダウンは\n60秒あり、また、\n効果を溜めることも可能である";
 		global.upgradeDesc[54] = "バグが、\n隠れ身の術、\n再生、\n強化特性を除去して\nくれるようになる";
 
 	
@@ -642,7 +642,7 @@ function scrUpgradePrices() {
 		global.upgradeDesc[75] = "鋭いトゲ甲羅を通路に置く";
 		global.upgradeDesc[76] = "オクタロックを召喚して\n弾を出すようになる";
 		global.upgradeDesc[77] = "全攻撃の発射間隔を短縮する\nまた、メイン攻撃の貫通力\nが大幅に増加する";
-		global.upgradeDesc[78] = "りんごが半分まで到達すると、\nトゲ甲羅で通路を埋めつくす\nクールダウンは40秒ありまた、\n他の攻撃も強化される";
+		global.upgradeDesc[78] = "りんごが半分まで到達すると、\nトゲ甲羅で通路を埋めつくす\nクールダウンは\n40秒あり、また、\n他の攻撃も強化される";
 		global.upgradeDesc[79] = "カーソルを出して\nボスを捕らえるまた、\n他の攻撃もかなり強化される";
 	
 	
@@ -655,9 +655,9 @@ function scrUpgradePrices() {
 	
 		global.upgradeDesc[80] = "ハート爆弾\nをたまに投下する\nようになるまた、\nハートタワーがある場合\nは爆発力が上がる";
 		global.upgradeDesc[81] = "針と爆弾の発射間隔\nが短くなり、\n忍者りんごにもダメージ\nを与えられるようになる";
-		global.upgradeDesc[82] = "針がりんごめがけて\n一気に飛んでいき、\n大ダメージを与えるまた、\nメインの攻撃力も上がる";
-		global.upgradeDesc[83] = "針の貫通力が上がり、\n爆弾が近くのりんご\nを自動追尾するようになる";
-		global.upgradeDesc[84] = "りんごが半分まで到達すると、\n大きなゾウを召喚\nして大ダメージ\nを与えるクールダウンは\n45秒ありまた、\n他の攻撃も強化される";
+		global.upgradeDesc[82] = "針の貫通力が上がり、\n爆弾が近くのりんご\nを自動追尾するようになる";
+		global.upgradeDesc[83] = "針がりんごめがけて\n一気に飛んでいき、\n大ダメージを与えるまた、\nメインの攻撃力も上がる"; 
+		global.upgradeDesc[84] = "りんごが半分まで到達すると、\n大きなゾウを召喚\nして大ダメージ\nを与えるクールダウンは\n45秒あり、また、\n他の攻撃も強化される";
 	
 	
 		//mayumushi
